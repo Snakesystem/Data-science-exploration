@@ -23,7 +23,7 @@ def perform():
     y = df_new["price_range"]
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, test_size=0.2)
     
-    rf = pickle.load(open('mobile_rf_performance.pkl', 'rb'))
+    rf = pickle.load(open('mobile_rf.pkl', 'rb'))
     
     y_rf = rf.predict(X_test)
    
